@@ -1,0 +1,139 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+
+
+
+    <link rel="icon" href="Favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/accountStyle.css">
+    <title>Register</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <img src="keralaImages/220px-Kerala_God's_Own_Country_Logo.svg.png" alt="logo">
+              <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="places.html">Places to Visit</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+              </ul>
+              
+            </div>
+          </nav>
+    </div>
+    <br>
+
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">Register</div>
+                        <div class="card-body">
+                            <form name="my-form" onsubmit="return Validate()" method="" action="#">
+                                <div class="form-group row">
+                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">Full Name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="full_name" class="form-control" name="full-name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="email_address"  class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                    <div class="col-md-6">
+                                        <input type="email" id="email_address" class="form-control" name="email-address">
+                                    </div>
+                                    <label for="error" id="mailError"></label>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="user_name" class="col-md-4 col-form-label text-md-right">User Name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="user_name" class="form-control" name="username">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="phone_number"  class="col-md-4 col-form-label text-md-right">Phone Number</label>
+                                    <div class="col-md-6">
+                                        <input type="number"  id="phone_number" class="form-control">
+                                        <label for="error" id="numError" ></label>
+                                    </div>
+                                    <label for="error" id="numError" ></label>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="present_address" class="col-md-4 col-form-label text-md-right">Present Address</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="present_address" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right" >Password</label>
+                                    <div class="col-md-6">
+                                        <input type="password" id="password" class="form-control" name="password" oninput=" passStrength()">
+                                        <label for="error" id="passError"></label>
+                                        <label for="inputPass" class="errorLabel col-md-6" id="passStrLabel"></label>
+                                    </div>
+
+                                    <label for="error" id="passError"></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right">Re-Enter Password</label>
+                                    <div class="col-md-6">
+                                        <input type="password"  id="re-password" class="form-control" name="password">
+                                        <label for="error" id="reError"></label>
+                                    </div>
+                                    <label for="error" id="reError"></label>
+                                </div>
+
+                                
+                                </div>
+
+                                    <div class="col-md-6 offset-md-4">
+                                        <button type="submit" class="btn btn-primary">
+                                        Register
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="JS/login.js"></script>
+</body>
+</html>

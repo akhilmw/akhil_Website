@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+footer{
+    color: aquamarine;
+    background-color: black;
+    text-align: center;
+    height: 35px
+}
